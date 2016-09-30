@@ -28,7 +28,7 @@ class A06{
 	}
 
 	void totprint(int l, int m, int e){
-		tot = (l+m+e)/3;
+		tot = (l+m+e)/3.0;
 		System.out.println("평균은 "+tot+"이고"); 
 	}
 
