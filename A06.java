@@ -33,11 +33,13 @@ class A06{
 	}
 
 	void grade(){
-		if(tot>=95){ System.out.println("학점은 A+ 입니다");}
-		else if(tot<95 && tot >= 90) { System.out.println("학점은 A입니다");}
-		else if(tot<90 && tot >=85) { System.out.println("학점은 B+입니다");}
-		else if(tot<85 && tot >= 80) { System.out.println("학점은 B입니다");}
-		else if(tot<80 && tot >= 75) { System.out.println("학점은 C+입니다");}
-		else { System.out.println("학점은 F입니다");	}
+		String hak = "";
+		if(tot>=95){ hak = "A+";}
+		else if(tot<95 && tot >= 90) { hak = "A";}
+		else if(tot<90 && tot >=85) { hak = "B+";}
+		else if(tot<85 && tot >= 80) { hak = "B";}
+		else if(tot<80 && tot >= 75) { hak = "C+";}
+		else { hak = "F";}
+		System.out.println("학점은 " + hak + " 입니다");
 	}
 }
